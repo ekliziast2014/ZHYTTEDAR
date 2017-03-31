@@ -1,0 +1,659 @@
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>Galleriffic | Thumbnail rollover effects and slideshow crossfades</title>
+		<link rel="stylesheet" href="css/basic.css" type="text/css">
+		<link rel="stylesheet" href="css/galleriffic-2.css" type="text/css">
+		<link href="../stylesV1.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+		<script type="text/javascript" src="js/jquery.galleriffic.js"></script>
+		<script type="text/javascript" src="js/jquery.opacityrollover.js"></script>
+		<!-- We only want the thunbnails to display when javascript is disabled -->
+		<script type="text/javascript">
+			document.write('<style>.noscript { display: none; }</style>');
+		</script>
+	</head>
+	<body>
+	<div class="line"></div>
+		<nav class="gal">
+			<ul class="main-menu">
+				<a href="../IndexV1.html"><li>Главная
+			<ul class="sub-menu">
+				<a href="../IndexRestHealthV1.html"><li>Оздоровительный отдых</li></a>
+				<a href="../IndexRestStayV1.html"><li>Заезды</li></a>
+				<a href="../IndexRestPricesV1.html"><li class="action"> Цены - А К Ц И И</li></a>
+				<a href="IndexRestGaleryV1.html"><li>Галерея</li></a>
+			</ul>
+		</li></a>
+		<a href="../IndexDietsV1.html"><li>Диеты
+			<ul class="sub-menu">
+				<a href="../IndexDietsV1.html"><li>Диеты</li></a>
+				<a href="../IndexDietsFrutsV1.html"><li>Фруктово-овощная</li></a>
+				<a href="../IndexDietsMakroV1.html"><li>Макробиотическая</li></a>
+				<a href="../IndexDietsMenuV1.html"><li>Меню</li></a>
+				<a href="../IndexDietsTesti.html"><li>Показания</li></a>
+				<a href="../IndexDietsAntiTesti.html"><li>Противопоказания</li></a>
+			</ul>
+		</li></a>
+		<a href="../IndexPropos.html"><li>Предложения
+			<ul class="sub-menu">
+				<a href="../IndexPropos.html"><li>Предложения</li></a>
+				<a href="../IndexProposFizio.html"><li>Физиотерапия</li></a>
+				<a href="../IndexProposRaces.html"><li>Заезды</li></a>
+				<a href="../IndexProposReserv.html"><li>Бронирование</li></a>
+				<a href="../IndexProposPricesV1.html"><li>Цены</li></a>
+			</ul>
+		</li></a>
+		<a href="../IndexCenter.html"><li>Центр
+			<ul class="sub-menu">
+				<a href="../IndexCenter.html"><li>Центр</li></a>
+				<a href="../IndexCenterAboutUs.html"><li>О нас</li></a>
+				<a href="IndexRestGaleryV1.html"><li>Галерея</li></a>
+				<a href="../IndexCenterPlaces.html"><li>Местность</li></a>
+				<a href="../IndexCenterRecomends.html"><li>Рекомендации для гостей</li></a>
+			</ul></li></a>
+		<a href="../IndexContacts.html"><li>Контакты
+			<ul class="sub-menu">
+				<a href="../IndexContactsContacts.html"><li>Контакты</li></a>
+				<a href="../IndexContactsMap.html"><li>Карта</li></a>
+			</ul>
+		</li></a>
+	</ul>
+			</nav>
+		<div id="page">
+			<div id="container">
+
+				<!-- Start Advanced Gallery Html Containers -->
+				<div id="gallery" class="content">
+					<div id="controls" class="controls"></div>
+					<div class="slideshow-container">
+						<div id="loading" class="loader"></div>
+						<div id="slideshow" class="slideshow"></div>
+					</div>
+					<div id="caption" class="caption-container"></div>
+				</div>
+				<div id="thumbs" class="navigation">
+					<ul class="thumbs noscript">
+						<li>
+							<a class="thumb" href="PHOTO/1.png" title="">
+								<img src="miniPHOTO/1.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/2.png" title="">
+								<img src="miniPHOTO/2.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/3.png" title="">
+								<img src="miniPHOTO/3.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/4.png" title="">
+								<img src="miniPHOTO/4.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/5.png" title="">
+								<img src="miniPHOTO/5.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/6.png" title="">
+								<img src="miniPHOTO/6.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/7.png" title="">
+								<img src="miniPHOTO/7.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/8.png" title="">
+								<img src="miniPHOTO/8.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/9.png" title="">
+								<img src="miniPHOTO/9.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/10.png" title="">
+								<img src="miniPHOTO/10.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/11.png" title="">
+								<img src="miniPHOTO/11.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/12.png" title="">
+								<img src="miniPHOTO/12.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/13.png" title="">
+								<img src="miniPHOTO/13.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/14.png" title="">
+								<img src="miniPHOTO/14.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/15.png" title="">
+								<img src="miniPHOTO/15.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/16.png" title="">
+								<img src="miniPHOTO/16.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/17.png" title="">
+								<img src="miniPHOTO/17.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/18.png" title="">
+								<img src="miniPHOTO/18.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/19.png" title="">
+								<img src="miniPHOTO/19.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/20.png" title="">
+								<img src="miniPHOTO/20.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/21.png" title="">
+								<img src="miniPHOTO/21.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/22.png" title="">
+								<img src="miniPHOTO/22.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/23.png" title="">
+								<img src="miniPHOTO/23.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/24.png" title="">
+								<img src="miniPHOTO/24.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/25.png" title="">
+								<img src="miniPHOTO/25.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/26.png" title="">
+								<img src="miniPHOTO/26.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/27.png" title="">
+								<img src="miniPHOTO/27.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/28.png" title="">
+								<img src="miniPHOTO/28.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/29.png" title="">
+								<img src="miniPHOTO/29.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/30.png" title="">
+								<img src="miniPHOTO/30.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/31.png" title="">
+								<img src="miniPHOTO/31.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/32.png" title="">
+								<img src="miniPHOTO/32.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/33.png" title="">
+								<img src="miniPHOTO/33.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/34.png" title="">
+								<img src="miniPHOTO/34.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/35.png" title="">
+								<img src="miniPHOTO/35.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/36.png" title="">
+								<img src="miniPHOTO/36.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/37.png" title="">
+								<img src="miniPHOTO/37.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/38.png" title="">
+								<img src="miniPHOTO/38.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/39.png" title="">
+								<img src="miniPHOTO/39.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/40.png" title="">
+								<img src="miniPHOTO/40.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/41.png" title="">
+								<img src="miniPHOTO/41.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li style="margin-top: 35px; margin-bottom: 35px">
+							<a class="thumb" href="PHOTO/42.png" title="">
+								<img src="miniPHOTO/42.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/43.png" title="">
+								<img src="miniPHOTO/43.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/44.png" title="">
+								<img src="miniPHOTO/44.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/45.png" title="">
+								<img src="miniPHOTO/45.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/46.png" title="">
+								<img src="miniPHOTO/46.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/47.png" title="">
+								<img src="miniPHOTO/47.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/48.png" title="">
+								<img src="miniPHOTO/48.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/49.png" title="">
+								<img src="miniPHOTO/49.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/50.png" title="">
+								<img src="miniPHOTO/50.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/51.png" title="">
+								<img src="miniPHOTO/51.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/52.png" title="">
+								<img src="miniPHOTO/52.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/53.png" title="">
+								<img src="miniPHOTO/53.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/54.png" title="">
+								<img src="miniPHOTO/54.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/55.png" title="">
+								<img src="miniPHOTO/55.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/56.png" title="">
+								<img src="miniPHOTO/56.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/57.png" title="">
+								<img src="miniPHOTO/57.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/58.png" title="">
+								<img src="miniPHOTO/58.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/59.png" title="">
+								<img src="miniPHOTO/59.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/60.png" title="">
+								<img src="miniPHOTO/60.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/61.png" title="">
+								<img src="miniPHOTO/61.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/62.png" title="">
+								<img src="miniPHOTO/62.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/63.png" title="">
+								<img src="miniPHOTO/63.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+						<li>
+							<a class="thumb" href="PHOTO/64.png" title="">
+								<img src="miniPHOTO/64.png" alt="">
+							</a>
+							<div class="caption">
+								<div class="image-title"></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				// We only want these styles applied when javascript is enabled
+				$('div.navigation').css({'width' : '350px', 'float' : 'left'});
+				$('div.content').css('display', 'block');
+
+				// Initially set opacity on thumbs and add
+				// additional styling for hover effect on thumbs
+				var onMouseOutOpacity = 0.75;
+				$('#thumbs ul.thumbs li').opacityrollover({
+					mouseOutOpacity:   onMouseOutOpacity,
+					mouseOverOpacity:  1.0,
+					fadeSpeed:         'fast',
+					exemptionSelector: '.selected'
+				});
+				
+				// Initialize Advanced Galleriffic Gallery
+				var gallery = $('#thumbs').galleriffic({
+					delay:                     2500,
+					numThumbs:                 15,
+					preloadAhead:              10,
+					enableTopPager:            true,
+					enableBottomPager:         true,
+					maxPagesToShow:            7,
+					imageContainerSel:         '#slideshow',
+					controlsContainerSel:      '#controls',
+					captionContainerSel:       '#caption',
+					loadingContainerSel:       '#loading',
+					renderSSControls:          true,
+					renderNavControls:         true,
+					playLinkText:              'Play Slideshow',
+					pauseLinkText:             'Pause Slideshow',
+					prevLinkText:              '&lsaquo; Previous Photo',
+					nextLinkText:              'Next Photo &rsaquo;',
+					nextPageLinkText:          'Next &rsaquo;',
+					prevPageLinkText:          '&lsaquo; Prev',
+					enableHistory:             false,
+					autoStart:                 false,
+					syncTransitions:           true,
+					defaultTransitionDuration: 900,
+					onSlideChange:             function(prevIndex, nextIndex) {
+						// 'this' refers to the gallery, which is an extension of $('#thumbs')
+						this.find('ul.thumbs').children()
+							.eq(prevIndex).fadeTo('fast', onMouseOutOpacity).end()
+							.eq(nextIndex).fadeTo('fast', 1.0);
+					},
+					onPageTransitionOut:       function(callback) {
+						this.fadeTo('fast', 0.0, callback);
+					},
+					onPageTransitionIn:        function() {
+						this.fadeTo('fast', 1.0);
+					}
+				});
+			});
+		</script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-71296919-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	</body>
+</html>
